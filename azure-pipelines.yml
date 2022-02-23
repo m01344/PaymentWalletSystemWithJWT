@@ -33,6 +33,6 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/Wallet/target'
     ArtifactName: 'drop'
     publishLocation: 'Container'
