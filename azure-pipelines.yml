@@ -14,7 +14,7 @@ stages:
   jobs:
   - job: BuildJar
     variables:
-      group: TestGrp
+    - group: TestGrp
     steps:
     - task: Maven@3
       inputs:
